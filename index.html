@@ -1,5 +1,15 @@
 <!DOCTYPE html>
 
+<!--
+TODO: Update ALL Staff Portraits
+TODO: Add your portfolio link to your name
+TODO: Make all the fonts match
+TODO: Add Other Software Section
+TODO: Clean Up Staff Portraits (White Outline)
+TODO: GAMES | PEOPLE | PROJECTS layout
+TODO: Links Auto-scroll you to relevant section.
+TODO: BG Video Animations on the game icons??
+-->
 <html lang="en">
   <head>
     <title>Conarium Website Homepage</title>
@@ -53,68 +63,110 @@
       data-tag="font"
     />
     <link rel="stylesheet" href="./style.css" />
+
+    <!-- Random MOTD Joke Script-->
+    <script type="text/javascript">
+      window.onload = function(){
+        const selection = "bruh wtf";
+        console.log("BRUH");
+        document.getElementById("rng-meme").value = selection;
+      }
+    </script>
+
   </head>
   <body>
-    <div>
+
       <link href="./home.css" rel="stylesheet" />
 
-      <div class="home-container">
-        <div class="home-container1">
-          <img
-            alt="image"
-            src="public/playground_assets/csoft-1400w.png"
-            class="home-image"
-            style="width:100%"
-          />
+      <div class="home-container ">
+        <div class="homepage fadefromblack gradient_bg">
+          <div class="csoft-banner ">
+            <img
+                    id="csoft-brain-graphic"
+              alt="image"
+              src="public/playground_assets/csoft-brain-1400w.png"
+              class="home-image center"
+            />
+            <img
+                    id="csoft-eye-graphic"
+                    alt="image"
+                    src="public/playground_assets/csoft-eye-1400w.png"
+                    class="home-image center"
+                    style="position:absolute; top:0; left:0; z-index:1}.topimg{position:absolute; top:0; left:0; z-index:2}"
+            />
+            <img
+                    id="csoft-text-graphic"
+                    alt="image"
+                    src="public/playground_assets/csoft-text-1400w.png"
+                    class="home-image center"
+                    style="position:absolute; top:0; left:0; z-index:1}.topimg{position:absolute; top:0; left:0; z-index:2}"
+
+            />
+          </div>
+          <div style="color:white; padding-bottom:10px;">
+            <p id="rng-meme" style="text-align:center;">
+              We make stuff sometimes. You should check it out.
+            </p>
+            <p style="text-align:center;">Copyright © 2019-2023 Conarium Software </p>
+          </div>
+
         </div>
-        <div class="home-banner">
-          <span class="home-text">
-              We are a group of Artists, Software Engineers, and
-              Designers interested in making interesting things.
-          </span>
-          <span class="home-text2">
-            Corporate Mission Statements Are Lame.
-          </span>
+        <div class="buttons-banner">
+          <div>
+            <a class="link" href="#">
+              <img class="button-icon" style="box-shadow: #2b2b2b 2px 2px 2px 2px; width:40px; " src="public/playground_assets/csoft-eye-300p.png"/>
+            </a>
+            <a class="link hover1" href="#games-banner">
+              <span class="button-text">GAMES</span>
+            </a>
+            <a class="link" href="#people-banner">
+              <span class="button-text">PEOPLE</span>
+            </a>
+            <a class="link" href="#projects-banner">
+              <span class="button-text">PROJECTS</span>
+            </a>
+            <a class="link" href=""><span class="button-text">NEWS</span></a>
+            <a class="link" href=""></a>
+          </div>
         </div>
-        <div class="home-banner1">
-          <span class="home-text4"><span>PLAY OUR GAMES</span></span>
+
+        <div id="games-banner"  class="home-banner1">
+          <span class="home-text4"><span><a href="#games">GAMES</a></span></span>
         </div>
-        <div class="home-container2">
+        <div id="games" class="games-container">
           <div class="home-gallery">
             <div
-              class="gallery-card1-gallery-card gallery-card1-root-class-name"
+              class="inner-panel  gallery-card1-root-class-name"
             >
-              <div class="gallery-card1-container">
-                <img
-                  alt="image"
-                  src="public/playground_assets/limitedsteps1-300w.png"
-                  class="gallery-card1-image"
-                />
+              <div id="limitedsteps-logo" class="gamelogo gallery-card1-container">
+
+                <h2 class="gallery-card1-text hide"><span><a href="https://www.roblox.com/games/10218305738/Limited-Steps">LIMITED STEPS</a></span></h2>
+                <br/>
+                <p class="gallery-card1-text1 hide">
+                  Experimental social game developed on ROBLOX.
+                </p>
               </div>
-              <h2 class="gallery-card1-text"><span><a href="https://www.roblox.com/games/10218305738/Limited-Steps">LIMITED STEPS</a></span></h2>
-              <span class="gallery-card1-text1">
-                <span>Social Walking Simulator.</span>
-              </span>
             </div>
             <div
               class="gallery-card1-gallery-card gallery-card1-root-class-name1"
             >
-              <div class="gallery-card1-container">
+              <div id = "vrislands-logo" class="gamelogo gallery-card1-container">
                 <img
                   alt="image"
                   src="public/playground_assets/vrislands-300w.png"
                   class="gallery-card1-image"
                 />
+                <h2 class="gallery-card1-text hide"><span><a href="https://www.roblox.com/games/5814751791/VR-Islands">VR ISLANDS</a></span></h2>
+                <p class="gallery-card1-text1 hide">
+                VR and Non-VR Hangout!
+              </p>
               </div>
-              <h2 class="gallery-card1-text"><span><a href="https://www.roblox.com/games/5814751791/VR-Islands">VR ISLANDS</a></span></h2>
-              <span class="gallery-card1-text1">
-                <span>VR and Non-VR Hangout!</span>
-              </span>
+
             </div>
             <div
               class="gallery-card1-gallery-card gallery-card1-root-class-name2"
             >
-              <div class="gallery-card1-container">
+              <div class="gamelogo gallery-card1-container">
                 <img
                   alt="image"
                   src="public/playground_assets/cavegame-300w.png"
@@ -129,7 +181,7 @@
             <div
               class="gallery-card1-gallery-card gallery-card1-root-class-name3"
             >
-              <div class="gallery-card1-container">
+              <div class="gamelogo gallery-card1-container">
                 <img
                   alt="image"
                   src="public/playground_assets/powernoid-300w.png"
@@ -144,7 +196,7 @@
             <div
               class="gallery-card1-gallery-card gallery-card1-root-class-name4"
             >
-              <div class="gallery-card1-container">
+              <div class="gamelogo gallery-card1-container">
                 <img
                   alt="image"
                   src="public/playground_assets/magicgarden-300w.png"
@@ -173,10 +225,10 @@
             </div>
           </div>
         </div>
-        <div class="home-banner2">
-          <span class="home-text6">MEET OUR STAFF</span>
+        <div id="people-banner" class="home-banner2">
+          <span class="home-text6">PEOPLE</span>
         </div>
-        <div class="home-container3">
+        <div id="people" class="people-container">
           <div class="home-gallery1">
             <div
               class="staff-gallery-card-gallery-card staff-gallery-card-root-class-name"
@@ -297,7 +349,132 @@
             
           </div>
         </div>
+        <div id="projects-banner" class="home-banner2">
+          <span class="home-text6">PEOPLE</span>
+        </div>
+        <div id="projects" class="people-container">
+          <div class="home-gallery1">
+            <div
+                    class="staff-gallery-card-gallery-card staff-gallery-card-root-class-name"
+            >
+              <div class="staff-gallery-card-container">
+                <img
+                        alt="image"
+                        src="public/playground_assets/josh-300w.png"
+                        class="staff-gallery-card-image"
+                />
+              </div>
+              <h2 class="staff-gallery-card-text">
+                <span>Joshua O'Leary</span>
+              </h2>
+              <span class="staff-gallery-card-text1">
+                <span>CEO & Lead Programmer</span>
+              </span>
+              <span class="staff-gallery-card-text2">
+                <span>josh@conarium.software</span>
+              </span>
+            </div>
+            <div
+                    class="staff-gallery-card-gallery-card staff-gallery-card-root-class-name5"
+            >
+              <div class="staff-gallery-card-container">
+                <img
+                        alt="image"
+                        src="public/playground_assets/owen-300w.png"
+                        class="staff-gallery-card-image"
+                />
+              </div>
+              <h2 class="staff-gallery-card-text"><span>Owen Slavich</span></h2>
+              <span class="staff-gallery-card-text1">
+                <span>Game Designer & PR Officer</span>
+              </span>
+              <span class="staff-gallery-card-text2">
+                <span>owen@conarium.software</span>
+              </span>
+            </div>
+            <div
+                    class="staff-gallery-card-gallery-card staff-gallery-card-root-class-name1"
+            >
+              <div class="staff-gallery-card-container">
+                <img
+                        alt="image"
+                        src="public/playground_assets/anthony-300w.png"
+                        class="staff-gallery-card-image"
+                />
+              </div>
+              <h2 class="staff-gallery-card-text">
+                <span>Anthony Olivas</span>
+              </h2>
+              <span class="staff-gallery-card-text1">
+                <span>Level Designer</span>
+              </span>
+              <span class="staff-gallery-card-text2">
+                <span>anthony@conarium.software</span>
+              </span>
+            </div>
+            <div
+                    class="staff-gallery-card-gallery-card staff-gallery-card-root-class-name4"
+            >
+              <div class="staff-gallery-card-container">
+                <img
+                        alt="image"
+                        src="public/playground_assets/nate-300w.png"
+                        class="staff-gallery-card-image"
+                />
+              </div>
+              <h2 class="staff-gallery-card-text"><span>Nathan Hayes</span></h2>
+              <span class="staff-gallery-card-text1">
+                <span>Webmaster</span>
+              </span>
+              <span class="staff-gallery-card-text2">
+                <span>nate@conarium.software</span>
+              </span>
+            </div>
+            <div
+                    class="staff-gallery-card-gallery-card staff-gallery-card-root-class-name3"
+            >
+              <div class="staff-gallery-card-container">
+                <img
+                        alt="image"
+                        src="public/playground_assets/tyler-300w.png"
+                        class="staff-gallery-card-image"
+                />
+              </div>
+              <h2 class="staff-gallery-card-text">
+                <span>Tyler Stewart</span>
+              </h2>
+              <span class="staff-gallery-card-text1">
+                <span>Game Designer & Biz Manager</span>
+              </span>
+              <span class="staff-gallery-card-text2">
+                <span>tyler@conarium.software</span>
+              </span>
+            </div>
+            <div
+                    class="staff-gallery-card-gallery-card staff-gallery-card-root-class-name2"
+            >
+              <div class="staff-gallery-card-container">
+                <img
+                        alt="image"
+                        src="public/playground_assets/alyssa-300w.png"
+                        class="staff-gallery-card-image"
+                />
+              </div>
+              <h2 class="staff-gallery-card-text">
+                <span>Alyssa Briseno</span>
+              </h2>
+              <span class="staff-gallery-card-text1">
+                <span>Artist & Designer</span>
+              </span>
+              <span class="staff-gallery-card-text2">
+                <span>alyssa@conarium.software</span>
+              </span>
+            </div>
+
+          </div>
+        </div>
+
       </div>
-    </div>
+
   </body>
 </html>
