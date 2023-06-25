@@ -22,7 +22,7 @@ TODO: BG Video Animations on the game icons??
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
     <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6 {  margin: 0;  padding: 0;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6 {  margin: 0;  padding: 0;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
     </style>
     <style data-tag="default-style-sheet">
       html {
@@ -74,12 +74,11 @@ TODO: BG Video Animations on the game icons??
     </script>
 
   </head>
-  <body>
-
+  <body >
       <link href="./home.css" rel="stylesheet" />
-
-      <div class="home-container ">
-        <div class="homepage fadefromblack gradient_bg">
+      <div class="home-container">
+        <div class="homepage gradient_bg">
+          <div class="blackbox">p</div>
           <div class="csoft-banner ">
             <img
                     id="csoft-brain-graphic"
@@ -92,7 +91,7 @@ TODO: BG Video Animations on the game icons??
                     alt="image"
                     src="public/playground_assets/csoft-eye-1400w.png"
                     class="home-image center"
-                    style="position:absolute; top:0; left:0; z-index:1}.topimg{position:absolute; top:0; left:0; z-index:2}"
+                    style="position:absolute; top:0; left:0; z-index:0}.topimg{position:absolute; top:0; left:0; z-index:0}"
             />
             <img
                     id="csoft-text-graphic"
@@ -107,14 +106,14 @@ TODO: BG Video Animations on the game icons??
             <p id="rng-meme" style="text-align:center;">
               We make stuff sometimes. You should check it out.
             </p>
-            <p style="text-align:center;">Copyright © 2019-2023 Conarium Software </p>
+
           </div>
 
         </div>
         <div class="buttons-banner">
           <div>
             <a class="link" href="#">
-              <img class="button-icon" style="box-shadow: #2b2b2b 2px 2px 2px 2px; width:40px; " src="public/playground_assets/csoft-eye-300p.png"/>
+              <img class="button-icon" src="public/playground_assets/csoft-eye-300p.png"/>
             </a>
             <a class="link hover1" href="#games-banner">
               <span class="button-text">GAMES</span>
@@ -129,117 +128,86 @@ TODO: BG Video Animations on the game icons??
             <a class="link" href=""></a>
           </div>
         </div>
-
-        <div id="games-banner"  class="home-banner1">
-          <span class="home-text4"><span><a href="#games">GAMES</a></span></span>
+        <br/>
+        <div id="games-banner" class="home-banner1">
+          <span class="home-text4"><a href="#games">GAMES</a></span>
         </div>
         <div id="games" class="games-container">
           <div class="home-gallery">
-            <div
-              class="inner-panel  gallery-card1-root-class-name"
+            <div class="inner-panel gallery-card1-gallery-card gallery-card1-root-class-name"
             >
-              <div id="limitedsteps-logo" class="gamelogo gallery-card1-container">
-
-                <h2 class="gallery-card1-text hide"><span><a href="https://www.roblox.com/games/10218305738/Limited-Steps">LIMITED STEPS</a></span></h2>
-                <br/>
-                <p class="gallery-card1-text1 hide">
-                  Experimental social game developed on ROBLOX.
+              <div id="limitedsteps-logo" class="gamelogo ">
+                <div>
+                  <a href="https://www.roblox.com/games/10218305738/Limited-Steps"><h2 class="hide" >LIMITED STEPS</h2></a>
+                </div>
+                <div>
+                  <p class="hide">Experimental social game developed on ROBLOX.</p>
+                </div>
+              </div>
+            </div>
+            <div class="inner-panel gallery-card1-gallery-card gallery-card1-root-class-name1">
+              <div id = "vrislands-logo" class="gamelogo">
+                <div>
+                  <a href="https://www.roblox.com/games/5814751791/VR-Islands">
+                  <h2 class="hide">VR ISLANDS</h2></a>
+                </div>
+                <p class="hide">
+                  VR and Non-VR Hangout!
                 </p>
               </div>
+
             </div>
-            <div
-              class="gallery-card1-gallery-card gallery-card1-root-class-name1"
+            <div class="inner-panel gallery-card1-gallery-card gallery-card1-root-class-name2"
             >
-              <div id = "vrislands-logo" class="gamelogo gallery-card1-container">
-                <img
-                  alt="image"
-                  src="public/playground_assets/vrislands-300w.png"
-                  class="gallery-card1-image"
-                />
-                <h2 class="gallery-card1-text hide"><span><a href="https://www.roblox.com/games/5814751791/VR-Islands">VR ISLANDS</a></span></h2>
-                <p class="gallery-card1-text1 hide">
-                VR and Non-VR Hangout!
-              </p>
+              <div id="cavegame-logo" class="gamelogo gallery-card1-container">
+
+                <h2 class="hide gallery-card1-text"><span><a href="https://store.steampowered.com/app/1238250/Cave_Game/">CAVE GAME</a></span></h2>
+                <span class="hide gallery-card1-text1">
+                  <span>Open Source Terraria Clone</span>
+                </span>
               </div>
 
             </div>
-            <div
-              class="gallery-card1-gallery-card gallery-card1-root-class-name2"
+            <div class="inner-panel gallery-card1-gallery-card gallery-card1-root-class-name3"
             >
-              <div class="gamelogo gallery-card1-container">
-                <img
-                  alt="image"
-                  src="public/playground_assets/cavegame-300w.png"
-                  class="gallery-card1-image"
-                />
+              <div id="powernoid-logo" class="gamelogo gallery-card1-container">
+
+                <h2 class="hide gallery-card1-text"><span><a href="https://www.roblox.com/games/7065932288/POWERNO-D">POWERNOID</a></span></h2>
+                <span class="hide gallery-card1-text1">
+                  <span>Top-Down Action Shooter</span>
+                </span>
               </div>
-              <h2 class="gallery-card1-text"><span><a href="https://store.steampowered.com/app/1238250/Cave_Game/">CAVE GAME</a></span></h2>
-              <span class="gallery-card1-text1">
-                <span>Open Source Terraria Clone</span>
-              </span>
+
             </div>
-            <div
-              class="gallery-card1-gallery-card gallery-card1-root-class-name3"
+            <div class="inner-panel gallery-card1-gallery-card gallery-card1-root-class-name4"
             >
-              <div class="gamelogo gallery-card1-container">
-                <img
-                  alt="image"
-                  src="public/playground_assets/powernoid-300w.png"
-                  class="gallery-card1-image"
-                />
-              </div>
-              <h2 class="gallery-card1-text"><span><a href="https://www.roblox.com/games/7065932288/POWERNO-D">POWERNOID</a></span></h2>
-              <span class="gallery-card1-text1">
-                <span>Top-Down Action Shooter</span>
-              </span>
-            </div>
-            <div
-              class="gallery-card1-gallery-card gallery-card1-root-class-name4"
-            >
-              <div class="gamelogo gallery-card1-container">
-                <img
-                  alt="image"
-                  src="public/playground_assets/magicgarden-300w.png"
-                  class="gallery-card1-image"
-                />
-              </div>
-              <h2 class="gallery-card1-text"><span>MAGIC GARDEN</span></h2>
-              <span class="gallery-card1-text1">
+              <div id="magicgarden-logo" class="gamelogo gallery-card1-container">
+
+                <h2 class="gallery-card1-text"><span>MAGIC GARDEN</span></h2>
+                <span class="gallery-card1-text1">
                 <span>Social Gardening Simulator</span>
               </span>
-            </div>
-            <div
-              class="gallery-card1-gallery-card gallery-card1-root-class-name5"
-            >
-              <div class="gallery-card1-container">
-                <img
-                  alt="image"
-                  src="public/playground_assets/prototype-300w.png"
-                  class="gallery-card1-image"
-                />
               </div>
-              <h2 class="gallery-card1-text"><span><a href="https://www.roblox.com/games/5104647485/PROTOTYPE-VR-ONLY-">PROTOTYPE VR</a></span></h2>
-              <span class="gallery-card1-text1">
-                <span>Early VR Physics Experiments.</span>
-              </span>
+            </div>
+            <div class="inner-panel gallery-card1-gallery-card gallery-card1-root-class-name5">
+              <div id="prototype-logo" class="gamelogo gallery-card1-container">
+
+                <h2 class="gallery-card1-text"><span><a href="https://www.roblox.com/games/5104647485/PROTOTYPE-VR-ONLY-">PROTOTYPE VR</a></span></h2>
+                <span class="gallery-card1-text1">
+                  <span>Early VR Physics Experiments.</span>
+                </span>
+              </div>
             </div>
           </div>
         </div>
+
         <div id="people-banner" class="home-banner2">
           <span class="home-text6">PEOPLE</span>
         </div>
         <div id="people" class="people-container">
           <div class="home-gallery1">
-            <div
-              class="staff-gallery-card-gallery-card staff-gallery-card-root-class-name"
-            >
-              <div class="staff-gallery-card-container">
-                <img
-                  alt="image"
-                  src="public/playground_assets/josh-300w.png"
-                  class="staff-gallery-card-image"
-                />
-              </div>
+            <div id="josh" class="staff-gallery-card-gallery-card staff-gallery-card-root-class-name">
+              <div id="joshpfp" class="staffportrait staff-gallery-card-container"></div>
               <h2 class="staff-gallery-card-text">
                 <span>Joshua O'Leary</span>
               </h2>
@@ -250,15 +218,9 @@ TODO: BG Video Animations on the game icons??
                 <span>josh@conarium.software</span>
               </span>
             </div>
-            <div
-              class="staff-gallery-card-gallery-card staff-gallery-card-root-class-name5"
-            >
-              <div class="staff-gallery-card-container">
-                <img
-                  alt="image"
-                  src="public/playground_assets/owen-300w.png"
-                  class="staff-gallery-card-image"
-                />
+            <div id="owen" class="staff-gallery-card-gallery-card staff-gallery-card-root-class-name5">
+              <div id="owenpfp" class="staffportrait staff-gallery-card-container">
+
               </div>
               <h2 class="staff-gallery-card-text"><span>Owen Slavich</span></h2>
               <span class="staff-gallery-card-text1">
@@ -268,9 +230,7 @@ TODO: BG Video Animations on the game icons??
                 <span>owen@conarium.software</span>
               </span>
             </div>
-            <div
-              class="staff-gallery-card-gallery-card staff-gallery-card-root-class-name1"
-            >
+            <div id="anthony" class="staff-gallery-card-gallery-card staff-gallery-card-root-class-name1">
               <div class="staff-gallery-card-container">
                 <img
                   alt="image"
@@ -298,7 +258,7 @@ TODO: BG Video Animations on the game icons??
                   class="staff-gallery-card-image"
                 />
               </div>
-              <h2 class="staff-gallery-card-text"><span>Nathan Hayes</span></h2>
+              <h2 class="staff-gallery-card-text"><span>Maxine Hayes</span></h2>
               <span class="staff-gallery-card-text1">
                 <span>Webmaster</span>
               </span>
@@ -350,9 +310,9 @@ TODO: BG Video Animations on the game icons??
           </div>
         </div>
         <div id="projects-banner" class="home-banner2">
-          <span class="home-text6">PEOPLE</span>
+          <span class="home-text6">PROJECTS</span>
         </div>
-        <div id="projects" class="people-container">
+        <div id="projects" class="projects-container">
           <div class="home-gallery1">
             <div
                     class="staff-gallery-card-gallery-card staff-gallery-card-root-class-name"
@@ -392,9 +352,7 @@ TODO: BG Video Animations on the game icons??
                 <span>owen@conarium.software</span>
               </span>
             </div>
-            <div
-                    class="staff-gallery-card-gallery-card staff-gallery-card-root-class-name1"
-            >
+            <div class="staff-gallery-card-gallery-card staff-gallery-card-root-class-name1">
               <div class="staff-gallery-card-container">
                 <img
                         alt="image"
@@ -413,8 +371,7 @@ TODO: BG Video Animations on the game icons??
               </span>
             </div>
             <div
-                    class="staff-gallery-card-gallery-card staff-gallery-card-root-class-name4"
-            >
+                    class="staff-gallery-card-gallery-card staff-gallery-card-root-class-name4">
               <div class="staff-gallery-card-container">
                 <img
                         alt="image"
@@ -450,9 +407,7 @@ TODO: BG Video Animations on the game icons??
                 <span>tyler@conarium.software</span>
               </span>
             </div>
-            <div
-                    class="staff-gallery-card-gallery-card staff-gallery-card-root-class-name2"
-            >
+            <div class="staff-gallery-card-gallery-card staff-gallery-card-root-class-name2">
               <div class="staff-gallery-card-container">
                 <img
                         alt="image"
@@ -470,11 +425,8 @@ TODO: BG Video Animations on the game icons??
                 <span>alyssa@conarium.software</span>
               </span>
             </div>
-
           </div>
         </div>
-
       </div>
-
   </body>
 </html>

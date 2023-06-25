@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  scroll-padding-top:50px;
 }
 
 .hide {
@@ -7,44 +8,112 @@ html {
   -webkit-text-fill-color: transparent;
   transition: 0.25s;
   position: relative;
+  vertical-align:bottom;
 }
 
-.gamelogo:hover  .hide {
-  display: block;
-  color: white;
-  #background: -webkit-linear-gradient(black, gray);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: white;
-  #background-size: auto;
-  visibility: visible;
-  opacity: 1;
-
+.blackbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 100%;
+  width:100%;
+  height: 100%;
+  z-index: 0;
+  animation: fadeBackground 3s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
 }
+
+@keyframes fadeBackground {
+  0% { opacity: 100%; }
+  100% { opacity: 0%; }
+}
+
+
+.gamelogo {
+  transition: 0.25s;
+  border-radius: 10px;
+  width: 250px;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
 
 .gamelogo:hover {
   width: 300px;
   height: 300px;
 }
-
-
+.gamelogo:hover  .hide {
+  color: black;
+  #-webkit-background-clip: text;
+  -webkit-text-fill-color: black;
+  #background-size: auto;
+  visibility: visible;
+}
+.staffportrait {
+  transition: 0.25s;
+  border-radius: 10px;
+  width: 250px;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+.staffportrait:hover {
+  width:300px;
+  height:300px;
+}
 
 #limitedsteps-logo {
   background-image: url(public/playground_assets/limitedsteps1-300w.png);
 }
-#vrislands-logo {
 
+#limitedsteps-logo:hover #dropitlow {
+  opacity: 100%;
+  background-image: linear-gradient(#FFF, transparent);
 }
 
+
+
+#vrislands-logo {
+  background-image: url(public/playground_assets/vrislands-300w.png);
+}
+#prototype-logo {
+  background-image: url(public/playground_assets/prototype-300w.png);
+}
+#powernoid-logo {
+  background-image: url(public/playground_assets/powernoid-300w.png);
+}
+#magicgarden-logo {
+  background-image: url(public/playground_assets/magicgarden-300w.png);
+}
+#cavegame-logo {
+  background-image: url(public/playground_assets/cavegame-300w.png);
+}
+
+#joshpfp {
+  background-image: url(public/playground_assets/josh-300w.png);
+}
+#owenpfp {
+  background-image: url(public/playground_assets/owen-300w.png);
+}
+#maxxypfp   { background-image: url(public/playground_assets/nate-300w.png); }
+#alyssapfp  { background-image: url(public/playground_assets/alyssa-300w.png); }
+#anthonypfp { background-image: url(public/playground_assets/anthony-300w.png);}
+#tylerpfp   { background-image: url(public/playground_assets/tyler-300w.png); }
 
 :root {
   --dl-color-gray-500: #595959;
   --dl-color-gray-700: #999999;
   --dl-color-gray-900: #D9D9D9;
-  --dl-size-size-large: 144px;
-  --dl-size-size-small: 48px;
-  --dl-color-danger-300: #A22020;
-  --dl-color-danger-500: #BF2626;
-  --dl-color-danger-700: #E14747;
+  --dl-size-size-large: 72px;
+  --dl-size-size-small: 24px;
+  --dl-color-danger-300: #40589d;
+  --dl-color-danger-500: #223364;
+  --dl-color-danger-700: #8196d0;
   --dl-color-gray-black: #000000;
   --dl-color-gray-white: #FFFFFF;
   --dl-size-size-medium: 96px;
@@ -114,24 +183,22 @@ html {
 .teleport-show {
   display: flex !important;
 }
-
 #csoft-brain-graphic {
-  opacity: 0;
-  animation: fadein 4s;
-  -moz-animation-delay: 3s;
-  -o-animation-delay: 3s;
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
-  animation-fill-mode: forwards;
-
-}
-#csoft-eye-graphic {
   opacity: 0;
   animation: fadein 3s;
   -moz-animation-delay: 1s;
   -o-animation-delay: 1s;
   -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+#csoft-eye-graphic {
+  opacity: 0;
+  animation: fadein 2s;
+  -moz-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
   animation-fill-mode: forwards;
 }
 

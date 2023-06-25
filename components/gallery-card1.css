@@ -6,7 +6,7 @@
   justify-content: center;
 }
 .gallery-card1-container {
-  flex: 0 0 auto;
+  #flex: 0 0 auto;
   width: auto;
   height: auto;
   display: flex;
