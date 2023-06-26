@@ -3,15 +3,6 @@ html {
   scroll-padding-top:50px;
 }
 
-
-.leanbottom {
-  position: absolute;
-  bottom: 5px;
-  #float: right;
-  background-image: linear-gradient(#FFF, #AAA);
-  visibility: hidden;
-}
-.leanbottom
 .hide {
   color: transparent;
   -webkit-text-fill-color: transparent;
@@ -21,7 +12,7 @@ html {
 }
 
 .text-align-left  { text-align: left;  }
-.text-align-right { text-align: right; }
+.text-align-right { float: right; text-align: right; }
 
 .blackbox {
   position: absolute;
@@ -52,29 +43,36 @@ html {
   background-size: cover;
   overflow: hidden;
   cursor: pointer;
+  padding: 0;
 }
 
 .gamelogo:hover {
 
-  width: 260px;
-  height: 210px;
+  #width: 260px;
+  #height: 210px;
   border-radius: 10px;
 
 }
 
 .leanbottom {
-  background-image: linear-gradient(#111, #000, #111, #000);
+  width:100%;
+  position: absolute;
+  bottom: 5px;
+
+  background-image: linear-gradient(#FFF, #AAA);
+  visibility: hidden;
 }
 
 .gamelogo:hover .leanbottom {
+  height: 60px;
+  transition: height 1s;
   visibility: visible;
-  opacity: 50%;
-  transition: opacity 0s 1s ease-in;
+  opacity: 75%;
+
 }
 .gamelogo:hover  .hide {
   transition-duration: 1s;
   outline-color: #6b6b6b;
-  outline-width: 3px;
   text-outline: #6b6b6b 3px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: black;
