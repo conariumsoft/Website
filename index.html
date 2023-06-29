@@ -22,7 +22,53 @@
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
     <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6 {  margin: 0;  padding: 0;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+      html {
+        line-height: 1.15;
+      }
+      body {
+        margin: 0;
+      }
+      * {
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+      }
+      p,li,ul,pre,div,h1,h2,h3,h4,h5,h6 {
+        margin: 0;
+        padding: 0;
+      }
+      button,input,optgroup,select,textarea {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+      }
+      button,select {
+        text-transform: none;
+      }
+      button,[type="button"],[type="reset"],[type="submit"] {
+        -webkit-appearance: button;
+      }
+      button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+      }
+      button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {
+        outline: 1px dotted ButtonText;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      input {
+        padding: 2px 4px;
+      }
+      img {
+        display: block;
+      }
+      html {
+        scroll-behavior: smooth
+      }
     </style>
     <style data-tag="default-style-sheet">
       html {
@@ -66,7 +112,14 @@
 
     <!-- Random MOTD Joke Script-->
     <script type="text/javascript">
-      window.onload = function(){
+      const memes = [
+        "",
+        "",
+        "",
+        "",
+
+      ];
+      window.onLoad = function(){
         const selection = "bruh wtf";
         console.log("BRUH");
         document.getElementById("rng-meme").value = selection;
@@ -80,26 +133,22 @@
         <div class="homepage gradient_bg">
           <div class="blackbox">p</div>
           <div class="csoft-banner ">
-            <img
-                    id="csoft-brain-graphic"
+            <img id="csoft-brain-graphic"
               alt="image"
               src="public/playground_assets/csoft-brain-1400w.png"
-              class="home-image center"
+              class="home-image"
             />
-            <img
-                    id="csoft-eye-graphic"
-                    alt="image"
-                    src="public/playground_assets/csoft-eye-1400w.png"
-                    class="home-image center"
-                    style="position:absolute; top:0; left:0; z-index:0}.topimg{position:absolute; top:0; left:0; z-index:0}"
+            <img id="csoft-eye-graphic"
+              alt="image"
+              src="public/playground_assets/csoft-eye-1400w.png"
+              class="overlaid-image"
+              style="z-index:1;"
             />
-            <img
-                    id="csoft-text-graphic"
-                    alt="image"
-                    src="public/playground_assets/csoft-text-1400w.png"
-                    class="home-image center"
-                    style="position:absolute; top:0; left:0; z-index:1}.topimg{position:absolute; top:0; left:0; z-index:2}"
-
+            <img id="csoft-text-graphic"
+              alt="image"
+              src="public/playground_assets/csoft-text-1400w.png"
+              class="overlaid-image"
+              style="z-index:2;"
             />
           </div>
           <div style="color:white; padding-bottom:10px;">
@@ -111,22 +160,34 @@
         </div>
         <div class="buttons-banner ">
 
+          <button class="button">
             <a class="link" href="#">
               <img class="button-icon" src="public/playground_assets/csoft-eye-300p.png"/>
             </a>
+          </button>
+
+          <button class="button">
             <a class="link hover1 button-text" href="#games-banner">
              GAMES
             </a>
+          </button>
+
+          <button class="button">
             <a class="link button-text" href="#people-banner">
               PEOPLE
             </a>
+          </button>
+          <button class="button">
             <a class="link button-text" href="#projects-banner">
               PROJECTS
             </a>
+          </button>
+
+          <button class="button">
             <a class="link button-text" href="">NEWS</a>
+          </button>
 
         </div>
-        <br/>
         <div id="games-banner" class="home-banner1">
           <span class="home-text4"><a href="#games">GAMES</a></span>
         </div>
@@ -285,16 +346,19 @@
             <p style="color:#3a983a">Trash</p>
           </div>
         </div>
-      </div>
-
-      <div id="legal-banner" class="home-banner1">
-        <p class="home-text4">LEGAL</p>
-      </div>
-      <div id="legal" class="projects-container">
-        <div style="text-align:center;">
-          <p style="color:#3a983a">Copyright (C) 2019-2023 Conarium Software LLC</p>
-          <p style="color:#3a983a">All Rights Reserved.</p>
+        <div id="legal-banner" class="home-banner1">
+          <p class="home-text4">LEGAL</p>
         </div>
+        <div id="legal" class="projects-container">
+          <div style="text-align:center;">
+            <p style="color:#3a983a">Copyright (C) 2019-2023 Conarium Software LLC</p>
+            <p style="color:#3a983a">All Rights Reserved.</p>
+          </div>
+        </div>
+
+
+
+
       </div>
   </body>
 </html>

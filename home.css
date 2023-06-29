@@ -142,15 +142,32 @@ html {
   align-self: center;
   object-fit: contain;
   margin: auto;
+  position: relative;
   padding-left:10px;
   padding-right:10px;
 }
+.overlaid-image {
+  width:99%;
+  flex:1;
+  position: absolute;
+  top:0;
+  left:0;
+  margin: auto;
+  display: block;
+  padding-left:10px;
+  padding-right:10px;
+  align-self: center;
+  object-fit: contain;
+
+}
 #csoft-eye-graphic {
   z-index: 3;
+
 }
 
 #csoft-brain-graphic {
   z-index: 3;
+
 }
 #csoft-text-graphic {
   z-index: 3;
@@ -185,7 +202,7 @@ html {
 }
 
 .center {
-  #display: block;
+  display: block;
 }
 
 body {
