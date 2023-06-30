@@ -30,7 +30,7 @@ html {
 
 @keyframes fadeBackground {
   0% { opacity: 100%; }
-  100% { opacity: 0%; }
+  100% { opacity: 0; }
 }
 
 .gamelogo {
@@ -74,12 +74,13 @@ html {
   transition-duration: 1s;
   outline-color: #6b6b6b;
   text-outline: #6b6b6b 3px;
+  color: black;
   -webkit-background-clip: text;
   -webkit-text-fill-color: black;
 }
 .staffportrait {
   transition: 0.25s;
-  border-radius: 10px;
+  #border-radius: 10px;
   width: 200px;
   height: 300px;
   background-position: center;
@@ -95,6 +96,7 @@ html {
 .staffportrait:hover .hide {
   transition-duration: 1s;
   outline-color: #6b6b6b;
+  color: black;
   text-outline: #6b6b6b 3px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: black;
@@ -102,9 +104,9 @@ html {
 
 .staffportrait:hover .leanbottom {
   #height: 60px;
-  transition: height 1s;
-  visibility: visible;
-  position: relative;
+  #transition: height 1s;
+  #visibility: visible;
+  #position: relative;
 }
 #limitedsteps-logo {
   background-image: url(public/playground_assets/limitedsteps1-300w.png);
@@ -184,39 +186,6 @@ html {
   background-color: var(--dl-color-gray-black);
 }
 
-.input {
-  color: var(--dl-color-gray-black);
-  cursor: auto;
-  padding: 0.5rem 1rem;
-  border-color: var(--dl-color-gray-black);
-  border-width: 1px;
-  border-radius: 4px;
-  background-color: var(--dl-color-gray-white);
-}
-.textarea {
-  color: var(--dl-color-gray-black);
-  cursor: auto;
-  padding: 0.5rem;
-  border-color: var(--dl-color-gray-black);
-  border-width: 1px;
-  border-radius: 4px;
-  background-color: var(--dl-color-gray-white);
-}
-
-.list {
-  width: 100%;
-  margin: 1em 0px 1em 0px;
-  display: block;
-  padding: 0px 0px 0px 1.5rem;
-  list-style-type: none;
-  list-style-position: outside;
-}
-.list-item {
-  display: list-item;
-}
-.teleport-show {
-  display: flex !important;
-}
 #csoft-brain-graphic {
   opacity: 0;
   animation: fadein 3s;
@@ -249,23 +218,7 @@ html {
 
 
 @keyframes fadein {
-  0% {opacity:0%;}
+  0% {opacity:0;}
   100% {opacity: 100%;}
 }
 
-.heading {
-  font-size: 32px;
-  font-family: Inter;
-  font-weight: 700;
-  line-height: 1.15;
-  text-transform: none;
-  text-decoration: none;
-}
-.content {
-  font-size: 16px;
-  font-family: Inter;
-  font-weight: 400;
-  line-height: 1.15;
-  text-transform: none;
-  text-decoration: none;
-}
