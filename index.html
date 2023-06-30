@@ -21,94 +21,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
-    <style data-tag="reset-style-sheet">
-      html {
-        line-height: 1.15;
-      }
-      body {
-        margin: 0;
-      }
-      * {
-        box-sizing: border-box;
-        border-width: 0;
-        border-style: solid;
-      }
-      p,li,ul,pre,div,h1,h2,h3,h4,h5,h6 {
-        margin: 0;
-        padding: 0;
-      }
-      button,input,optgroup,select,textarea {
-        font-family: inherit;
-        font-size: 100%;
-        line-height: 1.15;
-        margin: 0;
-      }
-      button,select {
-        text-transform: none;
-      }
-      button,[type="button"],[type="reset"],[type="submit"] {
-        -webkit-appearance: button;
-      }
-      button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {
-        border-style: none;
-        padding: 0;
-      }
-      button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {
-        outline: 1px dotted ButtonText;
-      }
-      a {
-        color: inherit;
-        text-decoration: inherit;
-      }
-      input {
-        padding: 2px 4px;
-      }
-      img {
-        display: block;
-      }
-      html {
-        scroll-behavior: smooth
-      }
-    </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: Inter;
-        font-size: 16px;
-      }
 
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.15;
-        color: var(--dl-color-gray-black);
-        background-color: var(--dl-color-gray-white);
-
-      }
-    </style>
-    <link
+    <!-- CSS Files -->
+    <link data-tag="reset-style-sheet"
+          rel="stylesheet"
+          href="./reset-style.css"
+    />
+    <link data-tag="default-style-sheet"
+          rel="stylesheet"
+          href="./default-style.css"
+    />
+    <link data-tag="font"
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      data-tag="font"
+
     />
-    <link
+    <link data-tag="font"
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      data-tag="font"
     />
-    <link
+    <link data-tag="font"
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      data-tag="font"
     />
-    <link
+    <link data-tag="font"
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      data-tag="font"
+
     />
     <link rel="stylesheet" href="./style.css" />
+
+    <!-- Scripts -->
 
     <!-- Random MOTD Joke Script-->
     <script type="text/javascript">
@@ -117,7 +60,6 @@
         "",
         "",
         "",
-
       ];
       window.onLoad = function(){
         const selection = "bruh wtf";
@@ -155,21 +97,23 @@
             <p id="rng-meme" style="text-align:center;">
               We make stuff sometimes. You should check it out.
             </p>
-
           </div>
         </div>
+
         <div class="buttons-banner ">
 
           <button class="button">
-            <a class="link" href="#">
-              <img class="button-icon" src="public/playground_assets/csoft-eye-300p.png"/>
+            <a class="" href="#">
+              <img class="button-icon"
+                   src="public/playground_assets/csoft-eye-300p.png"
+                   alt="EYE"
+              />
             </a>
           </button>
 
           <button class="button">
-            <a class="link hover1 button-text" href="#games-banner">
-             GAMES
-            </a>
+            <a class="link hover1 button-text"
+               href="#games-banner"> GAMES </a>
           </button>
 
           <button class="button">
@@ -192,7 +136,7 @@
           <span class="home-text4"><a href="#games">GAMES</a></span>
         </div>
         <div id="games" class="games-container">
-          <div class="home-gallery">
+          <div class="home-gallery1">
 
             <div id="limitedsteps" class="inner-panel gallery-card1-gallery-card gallery-card1-root-class-name">
               <div id="limitedsteps-logo" class="gamelogo" onclick="alert('test')">
@@ -258,14 +202,13 @@
             <!-- TODO: Implement hover info on staff elements -->
 
             <div id="josh" class="staff-gallery-card-gallery-card staff-gallery-card-root-class-name">
-              <div id="joshpfp" class="staffportrait staff-gallery-card-container">
+              <div id="joshpfp" class="staffportrait ">
                 <div class="leanbottom text-align-left">
-                  <h2 class="hide ">Joshua O'Leary</h2>
-                  <p class="hide"><span>CEO & Lead Programmer</span></p>
-                  <span class="hide "><span>josh@conarium.software</span></span>
+                  <h2 class="staff-gallery-card-text hide">Joshua O'Leary</h2>
+                  <p class="hide">CEO & Lead Programmer</p>
+                  <p class="hide">josh@conarium.software</p>
                 </div>
               </div>
-
             </div>
             <div id="owen" class="staff-gallery-card-gallery-card staff-gallery-card-root-class-name5">
               <div id="owenpfp" class="staffportrait staff-gallery-card-container">
@@ -335,7 +278,9 @@
           </div>
         </div>
         <div id="projects-banner" class="home-banner1">
-          <span class="home-text4">PROJECTS</span>
+          <span class="home-text4">
+            <a href="#projects">PROJECTS</a>
+          </span>
         </div>
         <div id="projects" class="projects-container">
           <div style="text-align:center;">
@@ -350,15 +295,15 @@
           <p class="home-text4">LEGAL</p>
         </div>
         <div id="legal" class="projects-container">
+          <div>
+            <a href="">Contact</a>
+            <a href="">Legal</a>
+          </div>
           <div style="text-align:center;">
             <p style="color:#3a983a">Copyright (C) 2019-2023 Conarium Software LLC</p>
             <p style="color:#3a983a">All Rights Reserved.</p>
           </div>
         </div>
-
-
-
-
       </div>
   </body>
 </html>

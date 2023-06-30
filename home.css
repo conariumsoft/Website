@@ -70,17 +70,17 @@
   justify-content: center;
 }
 .staff-gallery-card-container {
-  flex: 0 0 auto;
+  #flex: 0 0 auto;
   #width: auto;
   #eight: auto;
-  display: flex;
+  #display: flex;
   align-items: flex-start;
   justify-content: center;
   background-color: #2b2b2b;
 }
 .staff-gallery-card-image {
-  width: 300px;
-  object-fit: cover;
+  #width: 300px;
+  #object-fit: cover;
 }
 .staff-gallery-card-text {
   color: #f95c5c;
@@ -272,7 +272,7 @@ body {
 .button-text {
   color: #fff;
   width: auto;
-  font-size: xx-large;
+  font-size: x-large;
   #max-width: var(--dl-size-size-small);
   font-style: normal;
   #margin-top: var(--dl-space-space-unit);
@@ -302,8 +302,8 @@ body {
   vertical-align: center;
   position: relative;
   left:10px;
-  width:50px;
-  height: 40px;
+  width:40px;
+  height: 30px;
 }
 
 .buttons-banner {

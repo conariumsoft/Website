@@ -61,6 +61,7 @@ html {
   padding-bottom: 5px;
   background-image: linear-gradient(transparent, #AAA, #FFF);
   visibility: hidden;
+  opacity: 100%;
 }
 
 .gamelogo:hover .leanbottom {
@@ -75,7 +76,6 @@ html {
   text-outline: #6b6b6b 3px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: black;
-
 }
 .staffportrait {
   transition: 0.25s;
@@ -92,23 +92,22 @@ html {
   height:300px;
 }
 
-
 .staffportrait:hover .hide {
   transition-duration: 1s;
   outline-color: #6b6b6b;
   text-outline: #6b6b6b 3px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: black;
-}F
+}
 
 .staffportrait:hover .leanbottom {
-  height: 60px;
+  #height: 60px;
   transition: height 1s;
   visibility: visible;
+  position: relative;
 }
 #limitedsteps-logo {
   background-image: url(public/playground_assets/limitedsteps1-300w.png);
-
 }
 
 #vrislands-logo {
@@ -178,7 +177,7 @@ html {
 .button {
   color: var(--dl-color-gray-black);
   display: inline-block;
-  padding: 0.5rem 1rem;
+  #padding: 0.5rem 1rem;
   border-color: var(--dl-color-gray-black);
   border-width: 1px;
   border-radius: 4px;
@@ -203,6 +202,7 @@ html {
   border-radius: 4px;
   background-color: var(--dl-color-gray-white);
 }
+
 .list {
   width: 100%;
   margin: 1em 0px 1em 0px;
