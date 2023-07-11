@@ -11,6 +11,16 @@ html {
   vertical-align:bottom;
 }
 
+
+.hidden {
+  background-color: #1F1F1F;
+  opacity: 0;
+  height: 0;
+  width: 100%;
+  transition-property: height, opacity;
+  transition-duration: 0.5s;
+}
+
 .text-align-left  { text-align: left;  }
 .text-align-right { float: right; text-align: right; }
 
@@ -49,7 +59,7 @@ html {
 .gamelogo:hover {
   #width: 260px;
   #height: 210px;
-  border-radius: 10px;
+  #border-radius: 10px;
 
 }
 
@@ -80,17 +90,22 @@ html {
 }
 .staffportrait {
   transition: 0.25s;
-  #border-radius: 10px;
   width: 200px;
   height: 300px;
   background-position: center;
   background-size: cover;
+
   overflow: hidden;
   background-repeat: no-repeat;
 }
-.staffportrait:hover {
-  width:250px;
-  height:300px;
+.gallery-card:hover .staffportrait {
+  width:290px;
+  height:340px;
+
+}
+
+.gallery-card:hover {
+  border-radius: 40px;
 }
 
 .staffportrait:hover .hide {
